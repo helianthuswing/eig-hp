@@ -1,0 +1,61 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'express' ]
+info using npm@1.0.27
+info using node@v0.4.11
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/taiyo/.npmrc
+verbose config file /usr/local/etc/npmrc
+silly testEngine { name: 'application-name',
+silly testEngine   version: '0.0.1',
+silly testEngine   private: true,
+silly testEngine   dependencies: { express: '2.4.6', hamljs: '>= 0.0.1' },
+silly testEngine   _npmJsonOpts: 
+silly testEngine    { file: '/Users/taiyo/workspace/heroku/eig-hp/package.json',
+silly testEngine      wscript: false,
+silly testEngine      contributors: false,
+silly testEngine      serverjs: false },
+silly testEngine   _id: 'application-name@0.0.1',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.27',
+silly testEngine   _nodeVersion: 'v0.4.11',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/taiyo/workspace/heroku/eig-hp/package.json
+verbose loadDefaults application-name@0.0.1
+verbose from cache /Users/taiyo/workspace/heroku/eig-hp/package.json
+verbose into /Users/taiyo/workspace/heroku/eig-hp [ 'express' ]
+verbose cache add express@2.4.6
+verbose cache add [ 'express@2.4.6', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'express@2.4.6',
+silly cache add: name, spec, args   [ 'express@2.4.6', null ] ]
+verbose parsed url { pathname: 'express@2.4.6', href: 'express@2.4.6' }
+silly cache add: name, spec, args [ 'express', '2.4.6', [ 'express', '2.4.6' ] ]
+verbose parsed url { pathname: '2.4.6', href: '2.4.6' }
+info addNamed [ 'express', '2.4.6' ]
+verbose addNamed [ '2.4.6', '2.4.6' ]
+verbose GET express/2.4.6
+verbose raw, before any munging express/2.4.6
+verbose url resolving [ 'https://registry.npmjs.org/', './express/2.4.6' ]
+verbose url resolved https://registry.npmjs.org/express/2.4.6
+verbose url parsed { protocol: 'https:',
+verbose url parsed   slashes: true,
+verbose url parsed   host: 'registry.npmjs.org',
+verbose url parsed   hostname: 'registry.npmjs.org',
+verbose url parsed   href: 'https://registry.npmjs.org/express/2.4.6',
+verbose url parsed   pathname: '/express/2.4.6' }
+verbose etag "8B6YTWF8IDXMQM1GJO99B3QYQ"
+ERR! Error: ECONNREFUSED, Could not contact DNS servers
+ERR!     at IOWatcher.callback (dns.js:74:15)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 10.8.0
+ERR! command "node" "/usr/local/bin/npm" "install" "express"
+ERR! cwd /Users/taiyo/workspace/heroku/eig-hp
+ERR! node -v v0.4.11
+ERR! npm -v 1.0.27
+verbose exit [ 11, true ]

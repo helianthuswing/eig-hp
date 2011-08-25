@@ -6,9 +6,9 @@
 var express = require('express');
 
 var app = module.exports = express.createServer();
-app.register('.haml', require('hamljs'));
 
 // Configuration
+
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'hamljs');
@@ -29,6 +29,48 @@ app.configure('production', function(){
 // Routes
 app.get('/', function(req, res){
   res.render('index', {
+    title: 'Express',
+    layout: false
+  });
+});
+
+app.get('/access', function(req, res){
+  res.render('access', {
+    title: 'Express',
+    layout: false
+  });
+});
+
+app.get('/gallery', function(req, res){
+  res.render('gallery', {
+    title: 'Express',
+    layout: false
+  });
+});
+
+app.get('/inquiry', function(req, res){
+  res.render('inquiry', {
+    title: 'Express',
+    layout: false
+  });
+});
+
+app.get('/overview', function(req, res){
+  res.render('overview', {
+    title: 'Express',
+    layout: false
+  });
+});
+
+app.get('/process', function(req, res){
+  res.render('process', {
+    title: 'Express',
+    layout: false
+  });
+});
+
+app.get('/recruit', function(req, res){
+  res.render('recruit', {
     title: 'Express',
     layout: false
   });

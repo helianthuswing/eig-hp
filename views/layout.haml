@@ -1,26 +1,39 @@
 !!! 5
 %html
   %head
-    %title
-      = title
+    %meta{'http-equiv': "Content-Style-Type", content: "text/css" }
+    %meta{'http-equiv': "Cache-Control", content: "no-cache" }
+    %meta{name: 'description', content: description }
+    %meta{name: 'keywords', content: keywords }
+    %link{rel: "alternate", type: "application/atom+xml", title: 'announcements', href: ''}
+    %link{rel: "alternate", media: "handheld", href: '' }
+    %link{href: '/stylesheets/style.css', media: "screen", rel: "stylesheets", type: "text/css"}
+  %title= title
   %body
-    .header
-      %ul
-        %li
-          %a{href: '/'} TOP
-        %li
-          %a{href: '/overview'} Company Overview
-        %li
-          %a{href: '/process'} EIG Process
-        %li
-          %a{href: '/gallery'} EIG Gallery
-        %li
-          %a{href: '/access'} Access Map
-        %li
-          %a{href: '/inquiry'} Inquiry or Mail
-        %li
-          %a{href: '/recruit'} Recruitment
-    .container
-      != body
-    .footer
-      (c) 2011
+    #body
+      #header
+        .logo
+          %a{href: '/'}
+            %img{src: '/images/eig-logo-mono.gif'}
+        .menu
+          %ul
+            %li
+              %a{href: '/'} TOP
+            %li
+              %a{href: '/overview'} Company Overview
+            %li
+              %a{href: '/process'} EIG Process
+            %li
+              %a{href: '/gallery'} EIG Gallery
+            %li
+              %a{href: '/access'} Access Map
+            %li
+              %a{href: '/inquiry'} Inquiry or Mail
+            %li
+              %a{href: '/recruit'} Recruitment
+      #content
+        != body
+      #footer
+        &copy; 2011 EIG
+    = ugo2_tag
+    = ga_tag

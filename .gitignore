@@ -1,2 +1,13 @@
+.DS_Store
+.loadpath
+.project
+.nvmrc
+.npmrc
+.bundle
+.sass-cache
+*.log
+*.swp
+*.swo
+*.sqlite3
+Thumbs.db
 node_modules
-npm-debug.log

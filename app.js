@@ -33,46 +33,73 @@ app.configure('production', function(){
   app.use(express.errorHandler()); 
 });
 
+// Helpers
+app.helpers({
+  ugo2_tag: '',
+  ga_tag: ''
+});
+
+// Dynamic Helpers
+app.dynamicHelpers({
+  session: function(req, res){
+    return req.session;
+  }
+});
+
 // Routes
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Express'
+    title: 'TOP',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 
 app.get('/access', function(req, res){
   res.render('access', {
-    title: 'Express'
+    title: 'Access Map',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 
 app.get('/gallery', function(req, res){
   res.render('gallery', {
-    title: 'Express'
+    title: 'EIG Gallery',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 
 app.get('/inquiry', function(req, res){
   res.render('inquiry', {
-    title: 'Express'
+    title: 'Inquiry or Mail',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 
 app.get('/overview', function(req, res){
   res.render('overview', {
-    title: 'Express'
+    title: 'Company Overview',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 
 app.get('/process', function(req, res){
   res.render('process', {
-    title: 'Express'
+    title: 'EIG Process',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 
 app.get('/recruit', function(req, res){
   res.render('recruit', {
-    title: 'Express'
+    title: 'Recruitment',
+    description: 'Description',
+    keywords: 'Keywords'
   });
 });
 

@@ -103,5 +103,13 @@ app.get('/recruit', function(req, res){
   });
 });
 
+app.get('/privacy', function(req, res){
+  res.render('privacy', {
+    title: 'Privacy policy',
+    description: 'Description',
+    keywords: 'Keywords'
+  });
+});
+
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

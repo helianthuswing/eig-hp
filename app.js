@@ -35,8 +35,6 @@ app.configure('production', function(){
 
 // Helpers
 app.helpers({
-  ugo2_tag: '',
-  ga_tag: ''
 });
 
 // Dynamic Helpers

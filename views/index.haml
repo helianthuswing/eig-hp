@@ -1,1 +1,51 @@
-%h1 TOP
+!!! 5
+%html
+  %head
+    %meta{'http-equiv': "Content-Style-Type", content: "text/css" }
+    %meta{'http-equiv': "Cache-Control", content: "no-cache" }
+    %meta{name: 'description', content: description }
+    %meta{name: 'keywords', content: keywords }
+    %link{rel: "alternate", type: "application/atom+xml", title: 'announcements', href: ''}
+    %link{rel: "alternate", media: "handheld", href: '' }
+    %link{href: '/stylesheets/base.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %link{href: '/stylesheets/navi.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %link{href: '/stylesheets/prv.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %script{language: "javascript", type: "text/javascript", src: "javascripts/jquery.js"}
+    %script{language: "javascript", type: "text/javascript", src: "javascripts/jquery_rollover.js"}
+    %script{language: "javascript", type: "text/javascript", src: "javascripts/smartRollover.js"}
+  %title= title
+  %body
+    #container
+      #header
+        %a{href: '/'}
+          %img{src: '/images/eig-logo-mono.gif'}
+      #main
+        %h1 TOP
+        %br{clear: "both"}
+      #RollOverNavi
+        %ul.nav
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/'}
+              %img{src: '/images/sub_toppage.gif', alt: 'top page', width: "132", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
+            %a{href: '/overview'}
+              %img{src: '/images/sub_companyinfo.gif', alt: 'Company info', width: "133", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
+            %a{href: '/process'}
+              %img{src: '/images/sub_business.gif', alt: 'Business', width: "133", height: "38"}.rollover
+            %a{href: '/gallery'}
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/access'}
+              %img{src: '/images/sub_contactus.gif', alt: 'Contact us', width: "132", height: "38"}.rollover
+            %a{href: '/inquiry'}
+          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
+            %a{href: '/recruit'}
+              %img{src: '/images/sub_recruiting.gif', alt: 'Recruitment', width: "133", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
+            %a{href: '/privacy'}
+              %img{src: '/images/sub_privacy.gif', alt: 'Privacy policy', width: "133", height: "38"}.rollover
+        %br{clear: "both"}
+      #footer
+        .fontW &copy; 2011 EIG
+    = ugo2_tag
+    = ga_tag

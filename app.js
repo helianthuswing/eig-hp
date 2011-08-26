@@ -51,7 +51,8 @@ app.get('/', function(req, res){
   res.render('index', {
     title: 'TOP',
     description: 'Description',
-    keywords: 'Keywords'
+    keywords: 'Keywords',
+    layout: false
   });
 });
 

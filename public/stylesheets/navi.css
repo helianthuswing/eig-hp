@@ -1,0 +1,206 @@
+fieldset,img { 
+	border:0;
+}
+
+
+/* RollOverNavi */
+#RollOverNavi {
+	position: relative;
+	width: 800px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#RollOverNavi ul.nav {
+	width: 800px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#RollOverNavi ul.nav li {
+	display: inline;
+	float: left;
+	width:800px;
+	height:38px;
+	list-style-type: none;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#RollOverNavi ul.nav li.off_01 img {
+	vertical-align: bottom;
+	width: 134px;
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+	float: left;
+}
+
+
+#RollOverNavi ul.nav li.off_02 img {
+	vertical-align: bottom;
+	width: 133px;
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+	float: left;
+}
+
+
+/*01*/
+#RollOverNavi ul.nav li.off_01 {
+	width:134px;
+	height:38px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#RollOverNavi ul.nav li.on_01 {
+	width:134px;
+	height:38px;
+	float: left;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+/*02*/
+#RollOverNavi ul.nav li.off_02 {
+	width:133px;
+	height:38px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#RollOverNavi ul.nav li.on_02 {
+	width:133px;
+	height:38px;
+	float: left;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#RollOverNavi ul.nav ol.subMenu {
+	top:0;
+	left:0;
+	width:133px;
+}
+
+
+/*IE6‘Î‰ž*/
+* html #RollOverNavi ul.nav ol.subMenu {
+	margin-top: 0px;
+}
+
+#RollOverNavi ul.nav ol.subMenu li.off_sub {
+	width:133px;
+	height:37px;
+}
+
+#RollOverNavi ul.nav ol.subMenu li.on_sub {
+	width:133px;
+	height:37px;
+}
+
+#RollOverNavi ul.nav ol.subMenu li.lastChild {
+	height:37px;
+}
+
+#RollOverNavi ul.nav ol.subMenu li img {
+	vertical-align: bottom;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#RollOverNavi ul.nav ol.subMenu li a {
+	display: block;
+	width:133px;
+	height:37px;
+}
+
+#RollOverNavi ul.nav ol.subMenu li.lastChild a {
+	height:37px;
+}
+
+/* •ÒW•s‰Â */
+#RollOverNavi ul.nav *{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+}
+
+#RollOverNavi ul.nav {
+	position: relative;
+}
+
+#RollOverNavi ul.nav li.off_01 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 134px;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+#RollOverNavi ul.nav li.on_01 {
+	float: left;
+	overflow: hidden;
+	width: 134px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#RollOverNavi ul.nav li.off, #RollOverNavi ul.nav li.off_02 {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 133px;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+#RollOverNavi ul.nav li.on,#RollOverNavi ul.nav li.on_02 {
+	float: left;
+	overflow: hidden;
+	width: 133px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+	
+#RollOverNavi ul.nav li.on {
+	float: left;
+	overflow: hidden;
+	width: 133px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#RollOverNavi ul.nav>li.on {
+	overflow: visible;
+	width: 133px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#RollOverNavi ul.nav ol.subMenu {
+	position: relative;
+}
+#RollOverNavi ul.nav ol.subMenu li.off_sub {
+	position: relative;
+	overflow: hidden;
+}
+#RollOverNavi ul.nav ol.subMenu li.on_sub {
+	overflow: hidden;
+}
+#RollOverNavi ul.nav ol.subMenu>li.on_sub {
+	overflow: visible;
+}

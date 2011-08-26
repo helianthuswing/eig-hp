@@ -7,33 +7,61 @@
     %meta{name: 'keywords', content: keywords }
     %link{rel: "alternate", type: "application/atom+xml", title: 'announcements', href: ''}
     %link{rel: "alternate", media: "handheld", href: '' }
-    %link{href: '/stylesheets/style.css', media: "screen", rel: "stylesheets", type: "text/css"}
+    %link{href: '/stylesheets/base.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %link{href: '/stylesheets/navi.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %link{href: '/stylesheets/prv.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %script{language: "javascript", type: "text/javascript", src: "javascripts/jquery.js"}
+    %script{language: "javascript", type: "text/javascript", src: "javascripts/jquery_rollover.js"}
+    %script{language: "javascript", type: "text/javascript", src: "javascripts/smartRollover.js"}
   %title= title
   %body
-    #body
+    #container
       #header
-        .logo
-          %a{href: '/'}
-            %img{src: '/images/eig-logo-mono.gif'}
-        .menu
-          %ul
-            %li
-              %a{href: '/'} TOP
-            %li
-              %a{href: '/overview'} Company Overview
-            %li
-              %a{href: '/process'} EIG Process
-            %li
-              %a{href: '/gallery'} EIG Gallery
-            %li
-              %a{href: '/access'} Access Map
-            %li
-              %a{href: '/inquiry'} Inquiry or Mail
-            %li
-              %a{href: '/recruit'} Recruitment
-      #content
+        %a{href: '/'}
+          %img{src: '/images/eig-logo-mono.gif'}
+      #RollOverNavi
+        %ul.nav
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/'}
+              %img{src: '/images/sub_toppage.gif', alt: 'top page', width: "133", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/overview'}
+              %img{src: '/images/sub_companyinfo.gif', alt: 'Company info', width: "133", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/process'}
+              %img{src: '/images/sub_business.gif', alt: 'Business', width: "133", height: "38"}.rollover
+            %a{href: '/gallery'}
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/access'}
+              %img{src: '/images/sub_contactus.gif', alt: 'Contact us', width: "133", height: "38"}.rollover
+            %a{href: '/inquiry'}
+          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
+            %a{href: '/recruit'}
+              %img{src: '/images/sub_recruiting.gif', alt: 'Recruitment', width: "133", height: "38"}.rollover
+        %br{clear: "both"}
+      #main
         != body
+        %br{clear: "both"}
+      #links
+        %ul
+          %li
+            %a{href: '/'}
+              %img{src: '/images/anchor_toppage.gif', alt: 'Privacy policy', width: "125", height: "25"}
+          %li
+            %a{href: '/overview'}
+              %img{src: '/images/anchor_companyinfo.gif', alt: 'Company info', width: "125", height: "25"}
+          %li
+            %a{href: '/process'}
+              %img{src: '/images/anchor_business.gif', alt: 'Business info', width: "125", height: "25"}
+            %a{href: '/gallery'}
+          %li
+            %a{href: '/access'}
+              %img{src: '/images/anchor_contactus.gif', alt: 'Contact us', width: "125", height: "25"}
+            %a{href: '/inquiry'}
+          %li
+            %a{href: '/recruit'}
+              %img{src: '/images/anchor_recruit.gif', alt: 'Recruitment', width: "125", height: "25"}
       #footer
-        &copy; 2011 EIG
+        .fontW &copy; 2011 EIG
     = ugo2_tag
     = ga_tag

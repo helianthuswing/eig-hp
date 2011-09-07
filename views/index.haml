@@ -7,44 +7,52 @@
     %meta{name: 'keywords', content: keywords }
     %link{rel: "alternate", type: "application/atom+xml", title: 'announcements', href: ''}
     %link{rel: "alternate", media: "handheld", href: '' }
-    %link{href: '/stylesheets/base.css', media: "screen", rel: "stylesheet", type: "text/css"}
-    %link{href: '/stylesheets/navi.css', media: "screen", rel: "stylesheet", type: "text/css"}
-    %link{href: '/stylesheets/prv.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %link{href: '/stylesheets/top.css', media: "screen", rel: "stylesheet", type: "text/css"}
+    %link{href: '/stylesheets/navitop.css', media: "screen", rel: "stylesheet", type: "text/css"}
     %script{language: "javascript", type: "text/javascript", src: "javascripts/jquery.js"}
     %script{language: "javascript", type: "text/javascript", src: "javascripts/jquery_rollover.js"}
     %script{language: "javascript", type: "text/javascript", src: "javascripts/smartRollover.js"}
   %title= title
   %body
-    #container
-      #header
-        %a{href: '/'}
-          %img{src: '/images/eig-logo-mono.gif'}
-      #main
-        %h1 TOP
-        %br{clear: "both"}
+    #TopContainer
+      %img{src: '/images/eigopenning.jpg', width: '100%'}
       #RollOverNavi
         %ul.nav
-          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
-            %a{href: '/'}
-              %img{src: '/images/sub_toppage.gif', alt: 'top page', width: "132", height: "38"}.rollover
-          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
-            %a{href: '/overview'}
-              %img{src: '/images/sub_companyinfo.gif', alt: 'Company info', width: "133", height: "38"}.rollover
-          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
-            %a{href: '/process'}
-              %img{src: '/images/sub_business.gif', alt: 'Business', width: "133", height: "38"}.rollover
-            %a{href: '/gallery'}
-          %li{onMouseOver: "this.className='on_01'", onMouseOut: "this.className='off_01'"}.off_01
-            %a{href: '/access'}
-              %img{src: '/images/sub_contactus.gif', alt: 'Contact us', width: "132", height: "38"}.rollover
-            %a{href: '/inquiry'}
-          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
+          %li{onMouseOver: "this.className='on'", onMouseOut: "this.className='off'"}.off
+            %a{href: '/company'}
+              %img{src: '/images/top_companyinfo.gif', alt: 'Company info', width: "160", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on'", onMouseOut: "this.className='off'"}.off
+            %a{href: '/business'}
+              %img{src: '/images/top_businessfields.gif', alt: 'Business', width: "160", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on'", onMouseOut: "this.className='off'"}.off
+            %a{href: '/contact'}
+              %img{src: '/images/top_contactus.gif', alt: 'Contact us', width: "160", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on'", onMouseOut: "this.className='off'"}.off
             %a{href: '/recruit'}
-              %img{src: '/images/sub_recruiting.gif', alt: 'Recruitment', width: "133", height: "38"}.rollover
-          %li{onMouseOver: "this.className='on_02'", onMouseOut: "this.className='off_02'"}.off_02
+              %img{src: '/images/top_recruitinfo.gif', alt: 'Recruitment', width: "160", height: "38"}.rollover
+          %li{onMouseOver: "this.className='on'", onMouseOut: "this.className='off'"}.off
             %a{href: '/privacy'}
-              %img{src: '/images/sub_privacy.gif', alt: 'Privacy policy', width: "133", height: "38"}.rollover
+              %img{src: '/images/top_privacy.gif', alt: 'Privacy policy', width: "160", height: "38"}.rollover
         %br{clear: "both"}
+      #info
+        #Toplogo
+          %a{href: '/'}
+            %img{src: '/images/eig-logo-mono.gif'}
+        #NewsArea
+          %table{border: "0", cellspacing: "0"}
+            %tr
+              %td{rowspan: "16"}.newstit
+                %img{src: '/images/top_new.gif', alt: 'NEWS', width: "27", height: "9"}
+            %tr
+              %th 2011.9.10
+              %td
+                %p 事務所移転に伴いまして、弊社HPをリニューアル致しました。
+            %tr
+              %td{colspan: "2"}.line &nbsp;
+        #PrivacyBox
+          %p この度発生致しました東日本大震災に関しまして、被災されました皆様に、心よりお見舞い申し上げます。
+          #bannerBox
+          %br.clear
       #footer
         .fontW &copy; 2011 EIG
   != partial('ga')

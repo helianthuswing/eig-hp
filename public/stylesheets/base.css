@@ -54,7 +54,7 @@ div#Navi ul li#menu02 a {
 }
 
 div#Navi ul li#menu03 a {
-	background-image: url(../images/header_menu_bisinessfield.gif);
+	background-image: url(../images/header_menu_businessfield.gif);
 }
 
 div#Navi ul li#menu04 a {
@@ -69,6 +69,9 @@ div#Navi ul li#menu06 a {
 	background-image: url(../images/header_menu_privacypolicy.gif);
 }
 
+.openning {
+    padding: 0 90px;
+}
 
 /* base style */
 body {
@@ -312,6 +315,7 @@ p.comp {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	vertical-align: top;
+	background: url("../images/companyinfo_icon.gif") no-repeat left top; 
 }
 
 .compbox02 {

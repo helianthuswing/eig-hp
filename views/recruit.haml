@@ -1,1 +1,57 @@
-%h1 Recruitment
+%h1
+  %img{src: '/images/title_recruitinfo.gif', alt: "リクルート", width: "750", height: "80"}
+
+#contact
+  %p
+    %span.fontR_frt 現在、オペレーターの外注募集を行なっております。
+  %form{name: "recruit_form", enctype: "multipart/formdata", method: "post", action:"mailto:helianthuswing@gmail.com"}
+    %table{cellspacing: "0"}
+      %tr
+        %th 名前
+        %td
+          %input{type: "text", name: "姓", size: "10", maxlength: "10"}
+          %input{type: "text", name: "名", size: "10", maxlength: "10"}
+      %tr
+        %th 住所
+        %td
+          %input{type: "text", name: "郵便1", size: "3", maxlength: "3"}
+          = "-"
+          %input{type: "text", name: "郵便2", size: "4", maxlength: "4"}
+          %input{type: "text", name: "住所", size: "60", maxlength: "60"}
+      %tr
+        %th TEL
+        %td
+          %input{type: "text", name: "電話1", size: "4", maxlength: "4"}
+          = "-"
+          %input{type: "text", name: "電話2", size: "4", maxlength: "4"}
+          = "-"
+          %input{type: "text", name: "電話3", size: "4", maxlength: "4"}
+      %tr
+        %th FAX
+        %td
+          %input{type: "text", name: "FAX1", size: "4", maxlength: "4"}
+          = "-"
+          %input{type: "text", name: "FAX2", size: "4", maxlength: "4"}
+          = "-"
+          %input{type: "text", name: "FAX3", size: "4", maxlength: "4"}
+      %tr
+        %th E-mail
+        %td
+          %input{type: "text", name: "E-mail", size: "50", maxlength: "50"}
+      %tr
+        %th Ｑ1.使用しているOS
+        %td
+          %input{type: "checkbox", value:"Win", name:"A-Q1-OS"} ：Windows
+          %input{type: "checkbox", value:"Mac", name:"A-Q1-OS"} ：Macintosh
+      %tr
+        %th Ｑ2.使えるソフト
+        %td
+          %input{type: "checkbox", value:"Illustrator", name:"A-Q2-SOFT"} ：Illustrator
+          %input{type: "checkbox", value:"Photoshop", name:"A-Q2-SOFT"} ：Photoshop
+          %input{type: "checkbox", value:"Indesign", name:"A-Q2-SOFT"} ：Indesign
+          %input{type: "checkbox", value:"PowerPoint", name:"A-Q2-SOFT"} ：PowerPoint
+          %input{type: "checkbox", value:"Flash", name:"A-Q2-SOFT"} ：Flash
+    %p 以上で、アンケートは終了です。ご協力ありがとうございました。
+    %p 送信ボタンを、クリックしてください。
+    %input{type: "submit", name: "submit", value:"送信"}
+    %input{type: "reset", name: "reset", value:"リセット"}

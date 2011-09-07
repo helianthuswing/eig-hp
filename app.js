@@ -37,6 +37,9 @@ app.configure('production', function(){
 app.helpers({
 });
 
+var description_str = "株式会社イイアイジイは、テクニカルイラスト(TI)，立体製図，3次元イラスト，図面入力，サービスマニュアルの作成，プレゼンテーション用資料，デジタルコンテンツ，設計・製図をおこなっています。外部協力者も募集中！「フレーム」対応のブラウザを使用してください。"
+var keywords_str = "イイアイジイ,EIG,TI,テクニカルイラスト,立体製図,3次元イラスト,取扱説明書,プレゼンテーション,募集,求人,Flash,イラストレーター,設計,製図,マルチメディア,DTP,カタログ作成,CAD"
+
 // Dynamic Helpers
 app.dynamicHelpers({
   session: function(req, res){
@@ -48,65 +51,49 @@ app.dynamicHelpers({
 app.get('/', function(req, res){
   res.render('index', {
     title: 'TOP',
-    description: 'Description',
-    keywords: 'Keywords',
+    description: description_str,
+    keywords: keywords_str,
     layout: false
   });
 });
 
-app.get('/access', function(req, res){
-  res.render('access', {
-    title: 'Access Map',
-    description: 'Description',
-    keywords: 'Keywords'
+app.get('/company', function(req, res){
+  res.render('company', {
+    title: 'Company info',
+    description: description_str,
+    keywords: keywords_str
   });
 });
 
-app.get('/gallery', function(req, res){
-  res.render('gallery', {
-    title: 'EIG Gallery',
-    description: 'Description',
-    keywords: 'Keywords'
+app.get('/business', function(req, res){
+  res.render('business', {
+    title: 'Bussiness fields',
+    description: description_str,
+    keywords: keywords_str
   });
 });
 
-app.get('/inquiry', function(req, res){
-  res.render('inquiry', {
-    title: 'Inquiry or Mail',
-    description: 'Description',
-    keywords: 'Keywords'
-  });
-});
-
-app.get('/overview', function(req, res){
-  res.render('overview', {
-    title: 'Company Overview',
-    description: 'Description',
-    keywords: 'Keywords'
-  });
-});
-
-app.get('/process', function(req, res){
-  res.render('process', {
-    title: 'EIG Process',
-    description: 'Description',
-    keywords: 'Keywords'
+app.get('/contact', function(req, res){
+  res.render('contact', {
+    title: 'Contact us',
+    description: description_str,
+    keywords: keywords_str
   });
 });
 
 app.get('/recruit', function(req, res){
   res.render('recruit', {
-    title: 'Recruitment',
-    description: 'Description',
-    keywords: 'Keywords'
+    title: 'Recruiting info',
+    description: description_str,
+    keywords: keywords_str
   });
 });
 
 app.get('/privacy', function(req, res){
   res.render('privacy', {
     title: 'Privacy policy',
-    description: 'Description',
-    keywords: 'Keywords'
+    description: description_str,
+    keywords: keywords_str
   });
 });
 

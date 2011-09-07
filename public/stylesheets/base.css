@@ -1332,3 +1332,8 @@ form input.input_btn {
 
 
 #compOrgBox{width:710px; margin:20px auto 0 auto; padding:0 0 20px 0;}
+
+#business p{
+    line-height: 2.0;
+    letter-spacing: 1.5px;
+}

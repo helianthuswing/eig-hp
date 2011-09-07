@@ -37,7 +37,7 @@ app.configure('production', function(){
 app.helpers({
 });
 
-var description_str = "株式会社イイアイジイは、テクニカルイラスト(TI)，立体製図，3次元イラスト，図面入力，サービスマニュアルの作成，プレゼンテーション用資料，デジタルコンテンツ，設計・製図をおこなっています。外部協力者も募集中！「フレーム」対応のブラウザを使用してください。"
+var description_str = "株式会社イイアイジイは、テクニカルイラスト(TI)，立体製図，3次元イラスト，図面入力，サービスマニュアルの作成，プレゼンテーション用資料，デジタルコンテンツ，設計・製図をおこなっています。外部協力者も募集中！EIGは伝える技術の見える化を推進します。"
 var keywords_str = "イイアイジイ,EIG,TI,テクニカルイラスト,立体製図,3次元イラスト,取扱説明書,プレゼンテーション,募集,求人,Flash,イラストレーター,設計,製図,マルチメディア,DTP,カタログ作成,CAD"
 
 // Dynamic Helpers
@@ -50,7 +50,7 @@ app.dynamicHelpers({
 // Routes
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'TOP',
+    title: '株式会社EIG',
     description: description_str,
     keywords: keywords_str,
     layout: false
@@ -59,7 +59,7 @@ app.get('/', function(req, res){
 
 app.get('/company', function(req, res){
   res.render('company', {
-    title: 'Company info',
+    title: '株式会社EIG : 会社概要',
     description: description_str,
     keywords: keywords_str
   });
@@ -67,7 +67,7 @@ app.get('/company', function(req, res){
 
 app.get('/business', function(req, res){
   res.render('business', {
-    title: 'Bussiness fields',
+    title: '株式会社EIG : 業務内容',
     description: description_str,
     keywords: keywords_str
   });
@@ -75,7 +75,7 @@ app.get('/business', function(req, res){
 
 app.get('/contact', function(req, res){
   res.render('contact', {
-    title: 'Contact us',
+    title: '株式会社EIG : お問い合わせ',
     description: description_str,
     keywords: keywords_str
   });
@@ -83,7 +83,7 @@ app.get('/contact', function(req, res){
 
 app.get('/recruit', function(req, res){
   res.render('recruit', {
-    title: 'Recruiting info',
+    title: '株式会社EIG : リクルート',
     description: description_str,
     keywords: keywords_str
   });
@@ -91,7 +91,7 @@ app.get('/recruit', function(req, res){
 
 app.get('/privacy', function(req, res){
   res.render('privacy', {
-    title: 'Privacy policy',
+    title: '株式会社EIG : 個人情報保護方針',
     description: description_str,
     keywords: keywords_str
   });

@@ -1337,3 +1337,8 @@ form input.input_btn {
     line-height: 2.0;
     letter-spacing: 1.5px;
 }
+
+p.details{
+    margin-left: 16px;
+    line-height: 2.0;
+}

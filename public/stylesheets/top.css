@@ -142,6 +142,10 @@ a {
 	float:left;
 }
 
+#PrivacyBox p{
+    font-size: 15px;
+}
+
 #PrivacyArea01 {
 	width: 210px;
 	height: 330px;

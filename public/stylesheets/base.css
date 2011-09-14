@@ -307,7 +307,7 @@ p.comp {
 	padding: 0px;
 	width: 600px;
 	border: none;
-	font-size: 10pt;
+	font-size: 12pt;
 }
 
 .compbox01 {
@@ -475,6 +475,18 @@ p.comp {
 	border: none;
 	margin-left: 0px;
 	padding-left: 0px;
+}
+
+#message {
+	margin-top: 20px;
+	width: 700px;
+	margin-left: 100px;
+}
+
+#message p{
+    line-height: 2.0;
+    letter-spacing: 1.5px;
+    font-size: 15px;
 }
 
 a ,#cotact a ,#contact_box a {
@@ -824,7 +836,7 @@ border: none;
 }
 
 .fontR_frt {
-	font-size:11pt;
+	font-size:13pt;
 	color:#22547D;
 	font-weight:bold;
 	line-height: 1.2em;
